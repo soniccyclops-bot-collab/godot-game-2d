@@ -1,7 +1,7 @@
 [gd_project]
 
-config_version=5
-binary_format_version=6
+config_version=3
+_version_="3.2.3.stable.custom_build"
 
 [application]
 
@@ -9,6 +9,7 @@ config/name="PVP RTS - SonicCyclops"
 config/description="A networked PVP tower defense / RTS hybrid inspired by Mindustry"
 config/version="0.1.0"
 run/main_scene="res://src/scenes/main.tscn"
+config/icon="res://assets/sprites/spaceship.png"
 
 [autoload]
 
@@ -16,20 +17,14 @@ GameState="res://src/systems/game_state.gd"
 
 [debug]
 
-gdscript/warnings/unused_variable=1
-gdscript/warnings/unused_argument=1
-gdscript/warnings/unused_signal=1
+gdscript/warnings/unused_variable=true
+gdscript/warnings/unused_argument=true
+gdscript/warnings/unused_signal=true
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
-renderer/rendering_method="gl_compatibility"
-
-[network]
-
-multiplayer/mpapi/server_port=8888
-multiplayer/replicator/enabled=true
+environment/default_environment="res://default_env.tres"
 
 [gui]
 
-theme/default_font_size=16
+theme/custom_font_paths=[]
