@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "server",
+  "dolt_database": "godot_game_2d",
+  "project_id": "8e38b8db-5d6d-4115-9155-3dd615483567"
+}
