@@ -11,10 +11,6 @@ config/version="0.1.0"
 run/main_scene="res://src/scenes/main.tscn"
 config/icon="res://assets/sprites/spaceship.png"
 
-[autoload]
-
-GameState="res://src/systems/game_state.gd"
-
 [debug]
 
 gdscript/warnings/unused_variable=true

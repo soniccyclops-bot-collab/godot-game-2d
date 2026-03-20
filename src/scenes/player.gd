@@ -1,4 +1,4 @@
-extends CharacterBody2D
+extends KinematicBody2D
 
 class_name Player
 
@@ -6,6 +6,7 @@ const SPEED = 200.0
 const ACCELERATION = 500.0
 
 export var follow_mouse = true
+var velocity = Vector2.ZERO
 
 func _ready() -> void:
 	if not follow_mouse and has_node("Sprite"):
