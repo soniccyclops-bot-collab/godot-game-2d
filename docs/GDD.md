@@ -95,19 +95,44 @@ Waterflame's "Vast" album vibes: industrial, electronic, atmospheric with moment
 Main Menu
     ↓
 Game Start → MapGen → Setup Phase (15min) → Invasion Phase → Game Over
+    ↓
+Controllable Player Spaceship (for observation/fun)
 ```
 
 ---
 
-## 8. Open Questions (For Clarification)
+## 8. MVP Design Decisions (LOCKED)
 
-1. **Multiplayer Mode:** Local 2-player splitscreen or networked (LAN/online)?
-2. **Unit Types:** How many distinct unit types? (e.g., scouts, tanks, gunships?)
-3. **Building Types:** Resource extractors, factories, turrets—any other building types?
-4. **Neutral Threats:** Do players face neutral enemies during setup phase, or just each other?
-5. **Resource Types:** What resources? (e.g., copper, lead, coal, scrap?)
-6. **Map Variety:** How many unique terrain types? (grass, water, sand, obstacles?)
-7. **Difficulty Tuning:** Is this a casual game or skill-based competitive?
+### Multiplayer
+- **Networked play** over LAN/online (not local splitscreen)
+
+### Unit & Building Roster
+**Units (MVP):**
+- 1x Ground Unit (fires projectiles, can be targeted)
+- 1x Air Unit (flies over terrain, can be targeted)
+
+**Buildings:**
+- 1x Turret (fixed defense, auto-targets units)
+- 2x Factory (1x ground unit factory, 1x air unit factory)
+- 2x Mining Building (1x iron mine, 1x coal mine)
+
+### Economy
+- **Resources:** Iron + Coal only
+- **Resource Flow:** Miners extract → stored in core → factories consume for unit production
+- **No crafting chains** (v1 simplicity)
+
+### Combat & Threats
+- **Pure PVP** — no neutral enemies during setup phase
+- After 15 min invasion: player units march toward enemy base through connection points
+
+### Player Control
+- **Player character:** Spaceship (controllable during match for camera/observation)
+- Goal: Quick visual iteration with Cage video capture
+
+### Testing
+- **E2E tests from day 1** — GUT framework for Godot
+- Test architecture: Unit → Integration → Gameplay tests
+- All systems must be testable in isolation
 
 ---
 

@@ -1,0 +1,35 @@
+[gd_project]
+
+config_version=5
+binary_format_version=6
+
+[application]
+
+config/name="PVP RTS - SonicCyclops"
+config/description="A networked PVP tower defense / RTS hybrid inspired by Mindustry"
+config/version="0.1.0"
+run/main_scene="res://src/scenes/main.tscn"
+
+[autoload]
+
+GameState="res://src/systems/game_state.gd"
+
+[debug]
+
+gdscript/warnings/unused_variable=1
+gdscript/warnings/unused_argument=1
+gdscript/warnings/unused_signal=1
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+
+[network]
+
+multiplayer/mpapi/server_port=8888
+multiplayer/replicator/enabled=true
+
+[gui]
+
+theme/default_font_size=16
