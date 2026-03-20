@@ -28,7 +28,7 @@ func _process(delta: float) -> void:
 	
 	if input_dir != Vector2.ZERO:
 		velocity = velocity.move_toward(input_dir.normalized() * SPEED, ACCELERATION * delta)
-		if $Sprite2D:
+		if has_node("Sprite2D"):
 			$Sprite2D.rotation = velocity.angle()
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, ACCELERATION * delta)
