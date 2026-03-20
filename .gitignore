@@ -1,0 +1,32 @@
+# Godot
+.godot/
+.import/
+
+# LibreSprite
+*.backup
+*.tmp
+
+# LilyPond
+*.eps
+*.ps
+*.dvi
+*.count
+*.fls
+*.fdb_latexmk
+
+# Audio exports
+assets/music/*.wav
+assets/music/*.mp3
+assets/music/*.ogg
+
+# Sprite exports
+assets/sprites/*.png
+assets/sprites/*.gif
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
