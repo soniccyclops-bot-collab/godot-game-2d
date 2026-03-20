@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8xw2r5ncqp7"]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://src/scenes/player.gd" id="1_pf84d"]
-[ext_resource type="Texture2D" uid="uid://cbnn2jr6f1s05y" path="res://assets/sprites/spaceship.png" id="2_8x9ko"]
+[ext_resource type="Texture2D" path="res://assets/sprites/spaceship.png" id="2_8x9ko"]
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_pf84d")
