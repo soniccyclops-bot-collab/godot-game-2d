@@ -7,7 +7,7 @@ config_version=5
 config/name="PVP RTS - SonicCyclops"
 config/description="A networked PVP tower defense / RTS hybrid inspired by Mindustry"
 config/version="0.1.0"
-run/main_scene="res://src/scenes/main.tscn"
+run/main_scene="res://src/scenes/movie_demo.tscn"
 config/icon="res://assets/sprites/spaceship.png"
 
 [autoload]
